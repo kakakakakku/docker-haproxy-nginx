@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  haproxy:
+    build: ./haproxy/.
+    ports:
+     - '8080:8080'
+
+  nginx1:
+    build: ./nginx1/.
+
+  nginx2:
+    build: ./nginx2/.
+
+  nginx3:
+    build: ./nginx3/.
